@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<toc version="1.0"> <!--  categoryclosedimage="FolderClosed" categoryopenimage="FolderOpened"  
+topicimage="ItemIco"-->
+        
+        <tocitem text="Sistema"    target="aplicacion">
+            <tocitem text="Detalle del Sistema"    target="detalle"/>
+            <tocitem text="Requisitos para netbeans"    target="requisitos"/>
+           <tocitem text="Netbeans"    target="ide"/>
+           <tocitem text="Version del ID"    target="version"/>
+           <tocitem text="Sistema Operativo"    target="sistemaOperativo"/>
+           
+            
+        </tocitem>
+        <tocitem text="Manual de Usuario"    target="aplicacion1">
+           <tocitem text="Acceso del Sistema"    target="acceso_sistema"/>
+           <tocitem text="Vista Principal"    target="ventana_principal"/>
+           <tocitem text="Clientes Agregar"    target="MantenimientoAgregar"/>
+           <tocitem text="Clientes Modificar"    target="MantenimientoModificar"/>
+           <tocitem text="Catalogo Peliculas"    target="catalogo"/>
+           <tocitem text="Ejemplares"    target="ejemplares"/>
+           <tocitem text="Registrar Alquiler"    target="registrar_alquiler"/>
+           <tocitem text="Devolucion Alquiler"    target="devolucion_alquiler"/>
+           <tocitem text="Registrar Venta"    target="registrar_venta"/>
+           <tocitem text="Reportes"    target="reportes"/>
+        </tocitem>
+              <tocitem text="Datos Alumno-Profesor"    target="aplicacion2">
+                  <tocitem text="Alumno"    target="quienes_somos"/>
+                  <tocitem text="Profesor"    target="profesor"/>
+              </tocitem>
+              <tocitem text="JavaHelp"    target="aplicacion3">
+            <tocitem text="Como Usar?"    target="usar"/>
+             </tocitem>
+</toc>

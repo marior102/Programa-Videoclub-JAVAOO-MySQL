@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<!DOCTYPE map
+PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Map Version 2.0//EN"
+"http://java.sun.com/products/javahelp/map_2_0.dtd">
+<map version="1.0">
+   <mapID target="aplicacion" url="html/main.html" />
+   <mapID target="detalle" url="html/DetalleSistema.html" />
+   <mapID target="requisitos" url="html/RequisitosNetbeans.html" />
+   <mapID target="requisitos" url="html/RequisitosNetbeans.html" />
+    <mapID target="ide" url="html/Netbeans.html" />
+    <mapID target="version" url="html/VersionId.html" />
+    <mapID target="sistemaOperativo" url="html/SistemaOperativo.html" />
+    <mapID target="aplicacion1" url="html/ManualUsuario.html" />
+    <mapID target="acceso_sistema" url="html/AccesoSistema.html" />
+     <mapID target="ventana_principal" url="html/VistaPrincipal.html" />
+      <mapID target="MantenimientoAgregar" url="html/ManteniemientoClientes.html" />
+      <mapID target="MantenimientoModificar" url="html/MantenimientoClientes.html" />
+      <mapID target="catalogo" url="html/CatalogoPeliculas.html" />
+      <mapID target="ejemplares" url="html/Ejemplares.html" />
+       <mapID target="registrar_alquiler" url="html/RegistrarAlquiler.html" />
+       <mapID target="devolucion_alquiler" url="html/DevolucionAlquiler.html" />
+        <mapID target="registrar_venta" url="html/RegistrarVenta.html" />
+        <mapID target="reportes" url="html/Reporte.html" />
+         <mapID target="aplicacion2" url="html/DatosAlumnoProfesor.html" />
+         <mapID target="quienes_somos" url="html/Alumno.html" />
+         <mapID target="profesor" url="html/profesor.html" />
+          <mapID target="aplicacion3" url="html/JavaHelp.html" />
+          <mapID target="usar" url="html/ComoUsar.html" />
+   
+</map>

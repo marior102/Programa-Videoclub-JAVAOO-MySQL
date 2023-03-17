@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     vventa.`NroVenta` AS NroVenta,
+     vventa.`Cliente` AS Cliente,
+     vventa.`Pelicula` AS Pelicula,
+     vventa.`Fecha` AS Fecha,
+     vventa.`Hora` AS Hora,
+     vventa.`Cantidad` AS Cantidad,
+     vventa.`Precio` AS Precio,
+     vventa.`TotalPagar` AS TotalPagar,
+     vventa.`Vendedor` AS Vendedor
+FROM
+     `vventa` vventa]]>
+	</queryString>
+	<field name="NroVenta" class="java.lang.Integer"/>
+	<field name="Cliente" class="java.lang.String"/>
+	<field name="Pelicula" class="java.lang.String"/>
+	<field name="Fecha" class="java.lang.String"/>
+	<field name="Hora" class="java.lang.String"/>
+	<field name="Cantidad" class="java.lang.Long"/>
+	<field name="Precio" class="java.math.BigDecimal"/>
+	<field name="TotalPagar" class="java.math.BigDecimal"/>
+	<field name="Vendedor" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<image>
+				<reportElement x="275" y="0" width="300" height="64"/>
+				<imageExpression><![CDATA["leaf_banner_green.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement style="Title" x="0" y="13" width="263" height="33"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Registro de Venta]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="100" y="46" width="174" height="22"/>
+				<textElement/>
+				<text><![CDATA[Facturas]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="51" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="3" y="0" width="26" height="34"/>
+				<textElement/>
+				<text><![CDATA[Nro]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="29" y="1" width="71" height="34"/>
+				<textElement/>
+				<text><![CDATA[Cliente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="103" y="0" width="80" height="34"/>
+				<textElement/>
+				<text><![CDATA[Pelicula]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="186" y="0" width="61" height="34"/>
+				<textElement/>
+				<text><![CDATA[Fecha]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="247" y="0" width="61" height="34"/>
+				<textElement/>
+				<text><![CDATA[Hora]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="308" y="0" width="58" height="34"/>
+				<textElement/>
+				<text><![CDATA[Cantidad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="368" y="0" width="61" height="34"/>
+				<textElement/>
+				<text><![CDATA[Precio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="427" y="0" width="72" height="34"/>
+				<textElement/>
+				<text><![CDATA[TotalPagar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="499" y="0" width="56" height="34"/>
+				<textElement/>
+				<text><![CDATA[Vendedor]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement style="Detail" x="0" y="12" width="26" height="33"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{NroVenta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="26" y="13" width="74" height="33"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Cliente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="100" y="12" width="83" height="33"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Pelicula}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="183" y="12" width="61" height="33"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Fecha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="244" y="12" width="61" height="33"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Hora}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="305" y="12" width="61" height="33"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Cantidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="366" y="12" width="61" height="33"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Precio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="427" y="12" width="61" height="33"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{TotalPagar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="488" y="12" width="61" height="33"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Vendedor}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="0" y="0" width="197" height="20"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
